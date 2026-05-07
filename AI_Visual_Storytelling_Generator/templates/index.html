@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Visual Storytelling Generator</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>AI Visual Storytelling Generator</h1>
+
+    <p>Create cinematic AI-powered ad scripts and storytelling workflows.</p>
+
+    <div class="form-box">
+
+        <input type="text" id="product" placeholder="Enter Product or Brand Name">
+
+        <input type="text" id="audience" placeholder="Target Audience">
+
+        <select id="tone">
+            <option>Luxury</option>
+            <option>Cinematic</option>
+            <option>Minimal</option>
+            <option>Bold</option>
+            <option>Emotional</option>
+        </select>
+
+        <select id="platform">
+            <option>Instagram Reel</option>
+            <option>YouTube Shorts</option>
+            <option>TikTok</option>
+        </select>
+
+        <select id="content_type">
+            <option>Advertisement</option>
+            <option>Brand Campaign</option>
+            <option>Storytelling Reel</option>
+            <option>Product Launch</option>
+        </select>
+
+        <button onclick="generateContent()">
+            Generate Script
+        </button>
+
+    </div>
+
+    <div id="output"></div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
